@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/*
+ 출처 : https://www.youtube.com/watch?v=tL3n-G5gUZ4
+ */
+
 struct ContentView: View {
     @State private var activeTab: TabItem = .home
     

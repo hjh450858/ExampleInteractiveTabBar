@@ -38,7 +38,11 @@ struct InteractiveTabBar: View {
                 .ignoresSafeArea()
 //                .padding(.top, 20)
         }
-        // 드래그 좌표를 "TABBAR"라는 네임스페이스로 관리
+        /*
+         coordinateSpace = 특정 뷰의 좌표 공간에 이름을 할당하여, 다른쪽에서 points와 size같은 값을 적용시킬때
+         명시한 이름(ex: "TABBAR")으로 접근할 수 있게 도와줌
+         드래그 좌표를 "TABBAR"라는 네임스페이스로 관리
+         */
         .coordinateSpace(.named("TABBAR"))
     }
     
